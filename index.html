@@ -12,48 +12,65 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="nav-bar">
-                <li><img src="" alt="" /></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="title-wrap">
-        <h1>Full-Stack Developer</h1>
-        <h2>I write clean, elegant and efficient code</h2>
-        <img src="images/denis3.jpeg" alt="Avatar">
-    </div>
-    <div class="about-wrap">
-        <h3>
-            I am a full-stack developer located in Buenos Aires, Argentina.I
-            have a diverse set of skills for front end ranging from HTML &
-            CSS, Javascript and React and strong bases for backend of Ruby
-            on Rails.
-        </h3>
-    </div>
+    <nav class="navbar" role="navigation">
+        <div class="nav-container">
+            <div class="navbar-logo">
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-list">
+                    <li><a class="navbar-button" href="">About Me</a></li>
+                    <li><a class="navbar-button" href="">Portfolio</a></li>
+                    <li><a class="navbar-button contact-button" href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="title-wrap">
+            <h1 class="title size-1-deskpot size-2-tablet size-3-mobile">Full-stack Developer & Biology Student</h1>
+            <h2 class="subtitle size-1-deskpot size-2-tablet size-3-mobile">I write clean, elegant and efficient code</h2>
+            <img class="profile-img" src="images/denis3.jpeg" alt="Avatar">
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-wrap">
+            <div class="center-column">
+                <h1 class="title size-1-deskpot size-2-tablet size-3-mobile">Hi, I'm Denis Cuenca Brex.</h1>
+                <h2 class="subtitle size-1-deskpot size-2-tablet size-3-mobile">
+                    Nice to meet you! I'm a full-stack developer and biology student located in Buenos Aires, Argentina. I'm very passionate
+                    about technology. I strive to be one of the best in my field and to adapt to the
+                    constantly changing technology environment
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="my-skills">
+        <div class="container">
+            <div class="box">
+                <div class="columns">
+                    <div class="column">
+                        <img src="images/frontend-logo.png" alt="" class="front-end">
+                        <h1>Front-end Developer</h1>
+                        <p>Skillset:</p>
+                        <p>HTML, CSS, Sass, Javascript, React, Redux</p>
+                    </div>
+                    <div class="column">
+                        <img src="images/backend.png" alt="" class="back-end">
+                        <h1>Back-end Developer</h1>
+                        <p>Skillset:</p>
+                        <p>Ruby, Ruby on Rails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="portfolio-wrap">
         <h1>My works</h1>
         <ul class="projects"></ul>
     </div>
-    <div class="contact-wrap">
-        <h1>Contact</h1>
-        <h2>Have a question or want to work together?</h2>
-        <div class="form">
-            <form action="submit">
-                <input placeholder="Name" type="text" name="name" required />
-                <input placeholder="Enter email" type="email" name="email" required />
-                <textarea placeholder="Your Message" type="text" name="message"></textarea>
-                <button>submit</button>
-            </form>
-        </div>
-    </div>
     <footer>
         <div class="footer-links">
-            <a href=""><i class="fab fa-twitter"></i></a>
             <a href=""><i class="fab fa-github"></i></a>
             <a href=""><i class="fab fa-linkedin-in"></i></a>
             <a href=""><i class="fas fa-envelope"></i></a>
