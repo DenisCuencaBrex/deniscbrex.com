@@ -118,7 +118,7 @@ body {
 
 .profile-img {
 	border-radius: 100%;
-	width: 300px;
+	width: 253px;
 	height: 225px;
 	margin: 2rem 0;
 }
@@ -253,25 +253,13 @@ body {
 }
 
 .back {
-	padding: 2em;
-	margin: 1em;
+	padding: 1em;
+}
+
+.project {
+	width: 400px;
 	border-radius: 12px;
-}
-
-.back-1 {
-	background: red;
-}
-
-.back-2 {
-	background: blue;
-}
-
-.back-3 {
-	background: yellow;
-}
-
-.back-4 {
-	background: green;
+	border: 1px solid #4e94ec;
 }
 
 /*Projects End*/
