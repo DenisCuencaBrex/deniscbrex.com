@@ -16,9 +16,9 @@
         <div class="nav-container">
             <div class="navbar-menu">
                 <ul class="navbar-list">
-                    <li><a name="nav-btn" class="btn navbar-button" href="">About Me</a></li>
-                    <li><a name="nav-btn" class="btn navbar-button" href="">Projects</a></li>
-                    <li><a name="contact-btn" class="btn navbar-button contact-button" href="">Contact Me</a></li>
+                    <li><a name="nav-btn" class="btn navbar-button" href="#about">About Me</a></li>
+                    <li><a name="nav-btn" class="btn navbar-button" href="#my-projects">Projects</a></li>
+                    <li><a name="contact-btn" class="btn navbar-button contact-button" href="#contact-me">Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -27,10 +27,10 @@
         <div class="title-wrap">
             <h1 class="title is-size-1 size-1-deskpot size-2-tablet size-3-mobile">Full-stack Developer & Biology Student</h1>
             <h2 class="subtitle is-size-4 size-1-deskpot size-2-tablet size-3-mobile">I write clean, elegant and efficient code</h2>
-            <img class="profile-img" src="images/denis3.jpeg" alt="Avatar">
+            <img class="profile-img" src="images/profile-img.jpeg" alt="Avatar">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-wrap">
             <div class="center-column">
                 <h1 class="title is-white is-size-3 size-1-deskpot size-2-tablet size-3-mobile">Hi, I'm Denis Cuenca Brex.</h1>
@@ -93,48 +93,92 @@
             </div>
         </div>
     </section>
-    <div class="portfolio-wrap">
+    <section class="portfolio-wrap" id="my-projects">
         <h1 class="title is-size-3 size-1-deskpot size-2-tablet size-3-mobile">My Projects</h1>
         <h2 class="subtitle is-size-5 size-1-deskpot size-2-tablet size-3-mobile">Here are few of my projects. Want to see more? Go to my <a href="https://github.com/DenisCuencaBrex">Github profile.</a></h2>
         <div class="projects-wrap">
             <ul class="projects-list">
-                <li class="back back-1"><img src="" alt="">
-                    <p>project-1</p>
+                <li class="back back-1">
+                    <div class="container">
+                        <img src="/images/project-1.png" alt="" class="project">
+                        <div class="overlay">
+                            <div class="project-icons">
+                                <p class="project-text">A natgeo.com clone using Sass</p>
+                                <ul class="project-links">
+                                    <li><a class="project-icon git" href="https://github.com/DenisCuencaBrex/revillagigedo-islands"><i class="fab fa-github fa-w-16 fa-lg"></i></a></li>
+                                    <li><a class="project-icon live" href="https://raw.githack.com/DenisCuencaBrex/revillagigedo-islands/master/index.html"><i class="fas fa-globe-americas fa-w-16 fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="back back-2"><img src="" alt="">
-                    <p>project-2</p>
+                <li class="back back-2">
+                    <div class="container">
+                        <img src="/images/project-2.png" alt="" class="project">
+                        <div class="overlay">
+                            <div class="project-icons">
+                                <p class="project-text">A simple to do list made in javascript</p>
+                                <ul class="project-links">
+                                    <li><a class="project-icon git" href="https://github.com/DenisCuencaBrex/todo-list"><i class="fab fa-github fa-w-16 fa-lg"></i></a></li>
+                                    <li><a class="project-icon live" href="https://raw.githack.com/DenisCuencaBrex/todo-list/development/index.html"><i class="fas fa-globe-americas fa-w-16 fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="back back-3"><img src="" alt="">
-                    <p>project-3</p>
+                <li class="back back-3">
+                    <div class="container">
+                        <img src="/images/project-3.png" alt="" class="project">
+                        <div class="overlay">
+                            <div class="project-icons">
+                                <p class="project-text">This site</p>
+                                <ul class="project-links">
+                                    <li><a class="project-icon git" href="https://github.com/DenisCuencaBrex/deniscbrex.com"><i class="fab fa-github fa-w-16 fa-lg"></i></a></li>
+                                    <li><a class="project-icon live" href="https://raw.githack.com/DenisCuencaBrex/deniscbrex.com/master/index.html"><i class="fas fa-globe-americas fa-w-16 fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="back back-4"><img src="" alt="">
-                    <p>project-4</p>
+                <li class="back back-4">
+                    <div class="container">
+                        <img src="/images/project-4.png" alt="" class="project">
+                        <div class="overlay">
+                            <div class="project-icons">
+                                <p class="project-text">A newsweek.com clone using bootstrap</p>
+                                <ul class="project-links">
+                                    <li><a class="project-icon git" href="https://github.com/DenisCuencaBrex/newsweek-clone"><i class="fab fa-github fa-w-16 fa-lg"></i></a></li>
+                                    <li><a class="project-icon live" href="https://raw.githack.com/DenisCuencaBrex/bootstrap-project-7/master/index.html"><i class="fas fa-globe-americas fa-w-16 fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="resume-box">
-        <div class="large-box">
-            <div class="item text-item">
-                <h1 class="title">You can check out my resume here.</h1>
+        </sec>
+        <div class="resume-box">
+            <div class="large-box">
+                <div class="item text-item">
+                    <h1 class="title is-small">You can check out my resume here.</h1>
+                </div>
+                <div class="item btn-item">
+                    <a name="resume-btn" class="btn box-button resume-button" href="https://docs.google.com/document/d/1ex2kogk61sLSL2XevxJnv0rPPw0s_xh5Wznwy-JaMoU/edit?usp=sharing">Resume</a>
+                </div>
             </div>
-            <div class="item btn-item">
-                <a name="resume-btn" class="btn box-button resume-button" href="">Resume</a>
+        </div>
+        <footer>
+            <div class="footer-links">
+                <a class="icon footer-icon" href="https://github.com/DenisCuencaBrex"><i class="fab fa-github fa-w-16 fa-fw"></i></a>
+                <a class="icon footer-icon" href="https://www.linkedin.com/in/deniscbrex/"><i class="fab fa-linkedin-in fa-w-16 fa-fw"></i></a>
+                <a class="icon footer-icon" href="mailto:deniscbrex.dev@gmail.com?"><i class="far fa-envelope fa-w-16 fa-fw"></i></a>
+                <a class="icon footer-icon" href="https://twitter.com/DenisBrex"><i class="fab fa-twitter fa-w-16 fa-fw"></i></a>
             </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-links">
-            <a class="icon footer-icon" href=""><i class="fab fa-github fa-w-16 fa-fw"></i></a>
-            <a class="icon footer-icon" href=""><i class="fab fa-linkedin-in fa-w-16 fa-fw"></i></a>
-            <a class="icon footer-icon" href=""><i class="far fa-envelope fa-w-16 fa-fw"></i></a>
-            <a class="icon footer-icon" href=""><i class="fab fa-twitter fa-w-16 fa-fw"></i></a>
-        </div>
-        <div class="footer-text">
-            <span class="subtitle is-size-6 size-1-deskpot size-2-tablet size-3-mobile">Made by Denis Cuenca Brex © 2019</span>
-        </div>
-    </footer>
-    <script type="text/javascript" src="main.js"></script>
+            <div class="footer-text" id="contact-me">
+                <span class="subtitle is-size-6 size-1-deskpot size-2-tablet size-3-mobile">Made by Denis Cuenca Brex © 2019</span>
+            </div>
+        </footer>
+        <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
