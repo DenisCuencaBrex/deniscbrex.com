@@ -262,6 +262,55 @@ body {
 	border: 1px solid #4e94ec;
 }
 
+.overlay {
+	position: absolute;
+	width: 400px;
+	height: 208px;
+	background: #293347;
+	border-radius: 12px;
+	opacity: 0;
+}
+
+.overlay:hover {
+	opacity: 1;
+}
+
+.project-icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4em;
+}
+
+.project-links {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+.project-icon {
+	color: white;
+}
+
+.project-icon:hover {
+	color: #4e94ec;
+}
+
+.project-text {
+	color: white;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.git {
+	padding-right: 1.5em;
+}
+
+.live {
+	padding-right: 1.5em;
+}
+
 /*Projects End*/
 
 /*Resume Start*/
@@ -345,17 +394,13 @@ footer {
 /*Footer End*/
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 768px) {
-}
+@media screen and (max-width: 768px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 769px) {
-}
+@media screen and (min-width: 769px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 1088px) {
-}
+@media screen and (min-width: 1088px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
