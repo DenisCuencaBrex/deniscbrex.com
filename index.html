@@ -15,16 +15,18 @@
     <nav class="navbar" role="navigation">
         <div class="nav-container">
             <div class="navbar-menu">
-                <a href="javascript:void(0);" class="burguer-nav" onclick="dropItems();"><i class="fas fa-bars fa-w-16 fa-2x"></i></a>
+                <div class="hamburguer">
+                <a href="javascript:void(0);" class="burguer-nav" onclick="dropItems();"><i id="hamburguer" class="fas fa-bars fa-w-16 fa-2x"></i></a>
                 <div id="burguer-links">
                     <ul class="burguer-list">
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about" name="nav-btn" class="btn burguer-item">About</a></li>
+                        <li><a href="#my-projects" name="nav-btn" class="btn burguer-item">Projects</a></li>
+                        <li><a href="#contact-me" name="nav-btn" class="btn burguer-item">Contact</a></li>
                     </ul>
                 </div>
+                </div>
                 <ul class="navbar-list">
-                    <li><a name="nav-btn" class="btn navbar-button" href="#about">About Me</a></li>
+                    <li><a name="nav-btn" class="btn navbar-button" href="#about">About</a></li>
                     <li><a name="nav-btn" class="btn navbar-button" href="#my-projects">Projects</a></li>
                     <li><a name="contact-btn" class="btn navbar-button contact-button" href="#contact-me">Contact Me</a></li>
                 </ul>
