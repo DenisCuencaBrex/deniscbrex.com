@@ -15,8 +15,18 @@
     <nav class="navbar" role="navigation">
         <div class="nav-container">
             <div class="navbar-menu">
+                <div class="hamburguer">
+                <a href="javascript:void(0);" class="burguer-nav" onclick="dropItems();"><i id="hamburguer" class="fas fa-bars fa-w-16 fa-2x"></i></a>
+                <div id="burguer-links">
+                    <ul class="burguer-list">
+                        <li><a href="#about" name="nav-btn" class="btn burguer-item">About</a></li>
+                        <li><a href="#my-projects" name="nav-btn" class="btn burguer-item">Projects</a></li>
+                        <li><a href="#contact-me" name="nav-btn" class="btn burguer-item">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
                 <ul class="navbar-list">
-                    <li><a name="nav-btn" class="btn navbar-button" href="#about">About Me</a></li>
+                    <li><a name="nav-btn" class="btn navbar-button" href="#about">About</a></li>
                     <li><a name="nav-btn" class="btn navbar-button" href="#my-projects">Projects</a></li>
                     <li><a name="contact-btn" class="btn navbar-button contact-button" href="#contact-me">Contact Me</a></li>
                 </ul>
@@ -99,7 +109,7 @@
         <div class="projects-wrap">
             <ul class="projects-list">
                 <li class="back back-1">
-                    <div class="container">
+                    <div class="container project-container">
                         <img src="/images/project-1.png" alt="" class="project">
                         <div class="overlay">
                             <div class="project-icons">
@@ -113,7 +123,7 @@
                     </div>
                 </li>
                 <li class="back back-2">
-                    <div class="container">
+                    <div class="container project-container">
                         <img src="/images/project-2.png" alt="" class="project">
                         <div class="overlay">
                             <div class="project-icons">
@@ -127,7 +137,7 @@
                     </div>
                 </li>
                 <li class="back back-3">
-                    <div class="container">
+                    <div class="container project-container">
                         <img src="/images/project-3.png" alt="" class="project">
                         <div class="overlay">
                             <div class="project-icons">
@@ -141,7 +151,7 @@
                     </div>
                 </li>
                 <li class="back back-4">
-                    <div class="container">
+                    <div class="container project-container">
                         <img src="/images/project-4.png" alt="" class="project">
                         <div class="overlay">
                             <div class="project-icons">
@@ -160,7 +170,7 @@
         <div class="resume-box">
             <div class="large-box">
                 <div class="item text-item">
-                    <h1 class="title is-small">You can check out my resume here.</h1>
+                    <h1 class="resume-text is-small subtitle">You can check out my resume here.</h1>
                 </div>
                 <div class="item btn-item">
                     <a name="resume-btn" class="btn box-button resume-button" href="https://docs.google.com/document/d/1ex2kogk61sLSL2XevxJnv0rPPw0s_xh5Wznwy-JaMoU/edit?usp=sharing">Resume</a>
