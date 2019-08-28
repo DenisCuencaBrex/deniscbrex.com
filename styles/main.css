@@ -57,7 +57,13 @@
 
     /* Navbar Start */
     .navbar {
-        padding: 1em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-container {
+        width: 100%;
         display: flex;
         justify-content: flex-end;
     }
@@ -69,25 +75,46 @@
 
     .navbar-menu {
         display: inline-block;
-    }
-
-    .burguer-nav {
-        padding: 0.5em;
-        color: #4e94ec;
+        width: 100%;
     }
 
     #burguer-links {
         display: none;
+        width: 100%;
     }
 
     .burguer-list {
         list-style: none;
-        padding-left: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em;
+        box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 1px 0 0 #e6ecf8;
     }
 
     .burguer-item {
         font-size: 12px;
         text-decoration: none;
+        color: #293347;
+    }
+
+    .fa-bars {
+        display: block;
+        z-index: 9999999999;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0.5em;
+        color: #293347;
+    }
+
+    .fa-times {
+        display: none;
+        z-index: 9999999999;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0.5em;
         color: #293347;
     }
 
@@ -129,6 +156,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 3.5em;
     }
 
     .is-size-1 {
@@ -161,7 +189,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 15em;
+        margin-bottom: 13em;
     }
 
     .is-size-3 {
@@ -1222,7 +1250,7 @@
 }
 
 /*Large devices(large laptops/desktops, 1440px and up)*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2400px) {
     * {
         padding: 0;
         margin: 0;
@@ -1707,7 +1735,7 @@
     }
 
     .navbar-button {
-        font-size: 15px;
+        font-size: 25px;
         font-weight: 300;
         color: #293347;
         font-family: "europa", sans-serif;
@@ -1715,7 +1743,7 @@
     }
 
     .contact-button {
-        font-size: 15px;
+        font-size: 25px;
         padding: 0.7em;
         background-color: transparent;
         border-color: #4e94ec;
@@ -1743,7 +1771,7 @@
 
     .is-size-1 {
         color: #363636;
-        font-size: 3rem !important;
+        font-size: 5rem !important;
         font-weight: 800;
         line-height: 1.125;
         margin-bottom: 1.5rem;
@@ -1751,8 +1779,8 @@
 
     .profile-img {
         border-radius: 100%;
-        width: 253px;
-        height: 225px;
+        width: 400px;
+        height: 275px;
         margin: 2rem 0;
     }
 
@@ -1779,7 +1807,7 @@
 
     .is-size-3 {
         text-align: center;
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         font-weight: 800;
         line-height: 1.125;
         margin-top: 3em;
@@ -1792,7 +1820,7 @@
     }
 
     .is-size-7 {
-        font-size: 1rem !important;
+        font-size: 2rem !important;
         color: white;
         text-align: center;
     }
@@ -1810,7 +1838,7 @@
 
     .box {
         border-radius: 12px;
-        width: 860px;
+        width: 1200px;
         padding: 0em auto;
         background: white;
         box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
@@ -1838,7 +1866,7 @@
 
     .is-size-4 {
         color: #363636;
-        font-size: 1.2rem !important;
+        font-size: 2.2rem !important;
     }
 
     .column ul {
@@ -1851,17 +1879,18 @@
         color: #4e94ec;
     }
 
+    .subtext {
+        padding: 2em;
+        margin: 0;
+    }
+
     .column p {
-        font-size: 12px;
+        font-size: 20px;
         line-height: 30px;
     }
 
-    .subtext {
-        margin: 2em 8em;
-    }
-
     .is-size-5 {
-        font-size: 1rem !important;
+        font-size: 2rem !important;
         text-align: center;
     }
 
@@ -1882,7 +1911,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         list-style: none;
-        width: 60%;
     }
 
     .back {
@@ -1890,14 +1918,14 @@
     }
 
     .project {
-        width: 400px;
+        width: 900px;
         border-radius: 12px;
     }
 
     .overlay {
         position: absolute;
-        width: 400px;
-        height: 208px;
+        width: 900px;
+        height: 465px;
         background: #293347;
         border-radius: 12px;
         opacity: 0;
@@ -1912,7 +1940,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 4em;
+        padding-top: 10em;
     }
 
     .project-links {
@@ -1930,6 +1958,7 @@
     }
 
     .project-text {
+        font-size: 25px;
         color: white;
         text-align: center;
         margin-bottom: 1em;
@@ -1956,8 +1985,8 @@
 
     .large-box {
         display: flex;
-        width: 600px;
-        height: 80px;
+        width: 1200px;
+        height: 100px;
         background: #293347;
         box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #293347;
         color: #4e94ec;
@@ -1966,11 +1995,16 @@
     }
 
     .item {
-        padding-left: 1.5em;
+        padding-left: 10.5em;
+    }
+
+    .resume-text {
+        font-size: 20px;
+        color: white;
     }
 
     .box-button {
-        font-size: 13px;
+        font-size: 20px;
         font-weight: 300;
         color: white;
         font-family: "europa", sans-serif;
@@ -2018,7 +2052,7 @@
     }
 
     .is-size-6 {
-        font-size: 0.8rem !important;
+        font-size: 1rem !important;
         text-align: center;
         color: white;
     }
